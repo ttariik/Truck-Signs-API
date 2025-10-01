@@ -1,0 +1,434 @@
+# ===========================================
+# TRUCK SIGNS API - SECURE .GITIGNORE
+# ===========================================
+# Diese Datei verhindert das Committen von sensiblen Daten
+# und Docker-spezifischen Dateien auf GitHub
+
+# ===========================================
+# SENSIBLE DATEN & UMWELTVARIABLEN
+# ===========================================
+# Alle Umgebungsvariablen-Dateien
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+.env.docker
+.env.heroku
+.env.vercel
+.env.railway
+.env.render
+.env.digitalocean
+.env.aws
+.env.gcp
+.env.azure
+
+# Konfigurationsdateien mit sensiblen Daten
+config.json
+config.yaml
+config.yml
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+credentials.yaml
+credentials.yml
+settings.json
+settings.yaml
+settings.yml
+
+# API Keys und Tokens
+api_keys.txt
+tokens.txt
+keys.txt
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+
+# ===========================================
+# DOCKER & CONTAINER
+# ===========================================
+# Docker-spezifische Dateien
+Dockerfile*
+docker-compose*.yml
+docker-compose*.yaml
+.dockerignore
+.docker/
+docker/
+containers/
+
+# Docker Volumes und Daten
+postgres_data/
+mysql_data/
+redis_data/
+mongo_data/
+volume_data/
+
+# Docker Build Cache
+.docker_build_cache/
+docker_build_cache/
+
+# ===========================================
+# DATENBANKEN & DATEN
+# ===========================================
+# SQLite Datenbanken
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite3-journal
+
+# PostgreSQL Dumps
+*.sql
+*.dump
+*.backup
+*.pg_dump
+
+# MySQL Dumps
+*.mysql
+*.mysqldump
+
+# MongoDB Dumps
+*.bson
+*.mongodump
+
+# Redis Dumps
+*.rdb
+*.aof
+
+# ===========================================
+# DJANGO SPEZIFISCH
+# ===========================================
+# Django Logs
+*.log
+logs/
+log/
+
+# Django Cache
+.cache/
+cache/
+
+# Django Static Files (generiert)
+static/
+staticfiles/
+static_root/
+
+# Django Media Files
+media/
+media_root/
+uploads/
+user_uploads/
+
+# Django Sessions
+sessions/
+
+# Django Migrations (optional - je nach Projekt)
+# migrations/
+
+# Django Local Settings
+local_settings.py
+local_config.py
+dev_settings.py
+test_settings.py
+
+# Django Secret Key
+secret_key.txt
+django_secret.txt
+
+# ===========================================
+# PYTHON & VIRTUAL ENVIRONMENTS
+# ===========================================
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+pythonenv*
+env.bak/
+venv.bak/
+.conda/
+conda-meta/
+
+# Python Package Management
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytestdebug.log
+
+# ===========================================
+# IDE & EDITOR
+# ===========================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===========================================
+# BETRIEBSSYSTEM
+# ===========================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# CLOUD & DEPLOYMENT
+# ===========================================
+# Heroku
+.heroku/
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Railway
+.railway/
+
+# Render
+.render/
+
+# DigitalOcean
+.do/
+
+# AWS
+.aws/
+aws-credentials
+
+# Google Cloud
+.gcloud/
+gcloud-credentials
+
+# Azure
+.azure/
+azure-credentials
+
+# ===========================================
+# SECURITY & CERTIFICATES
+# ===========================================
+# SSL/TLS Zertifikate
+*.crt
+*.cer
+*.der
+*.p7b
+*.p7r
+*.spc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# SSH Keys
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+known_hosts
+authorized_keys
+
+# GPG Keys
+*.gpg
+*.asc
+*.sig
+
+# ===========================================
+# PAYMENT & E-COMMERCE
+# ===========================================
+# Stripe
+stripe_keys.txt
+stripe_secret.txt
+stripe_webhook_secret.txt
+
+# PayPal
+paypal_keys.txt
+paypal_secret.txt
+
+# Square
+square_keys.txt
+square_secret.txt
+
+# ===========================================
+# EMAIL & SMTP
+# ===========================================
+# Email Konfiguration
+email_config.txt
+smtp_config.txt
+mailgun_keys.txt
+sendgrid_keys.txt
+ses_keys.txt
+
+# ===========================================
+# CLOUDINARY & FILE STORAGE
+# ===========================================
+# Cloudinary
+cloudinary_config.txt
+cloudinary_keys.txt
+
+# AWS S3
+s3_config.txt
+s3_keys.txt
+
+# Google Cloud Storage
+gcs_config.txt
+gcs_keys.txt
+
+# ===========================================
+# MONITORING & ANALYTICS
+# ===========================================
+# Sentry
+sentry_config.txt
+sentry_dsn.txt
+
+# Google Analytics
+ga_config.txt
+gtag_config.txt
+
+# Mixpanel
+mixpanel_config.txt
+mixpanel_keys.txt
+
+# ===========================================
+# BACKUP & ARCHIVE
+# ===========================================
+# Backup Dateien
+*.backup
+*.bak
+*.old
+*.orig
+*.tmp
+*.temp
+
+# Archive
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# ===========================================
+# TESTING & DEVELOPMENT
+# ===========================================
+# Test Coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Test Databases
+test_*.db
+test_*.sqlite
+test_*.sqlite3
+
+# Test Logs
+test_logs/
+test_results/
+
+# ===========================================
+# DOCUMENTATION (Optional)
+# ===========================================
+# Generierte Dokumentation
+docs/_build/
+doc/_build/
+site/
+
+# ===========================================
+# CUSTOM PROJECT SPECIFIC
+# ===========================================
+# Projekt-spezifische sensible Dateien
+sensitive_data/
+private/
+confidential/
+internal/
+restricted/
+
+# Screenshots (falls sie sensible Daten enthalten)
+# screenshots/
+
+# ===========================================
+# END OF .GITIGNORE
+# ===========================================
